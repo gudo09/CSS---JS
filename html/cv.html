@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="../imagenes/favicon-196x196.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/script.js"></script>
+
+    <title>Formulario CV</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Cabecera de la página web -->
+        <div class="banner">
+            <a href="index.html">
+                <img class="banner" src="../imagenes/logo.png">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav_bar">
+            <script>
+                crearNavBar();
+            </script>
+        </ul>
+    </nav>
+
+    <section>
+
+        <form class="formularioCV" action="mailto:rrhh@tradelog.com.ar" method="post" onsubmit="return validarCorreo()">
+            <h1 class="tituloFormulario">Formá parte de nuestro equipo</h1>
+
+            <input type="text" placeholder="Correo electrónico:" id="fmail" required/>
+
+            <input type="tel" id="ftelefono" placeholder="Teléfono:" maxlength="15" onkeypress="validarTelefono(event)" onpaste="detenerEvento(event)" required/>
+
+            <select id="fprovincia" class="lstprovincia" name="" size="1">
+          <option value="1" selected>Buenos Aires</option>
+          <option value="2">Catamarca</option>
+          <option value="3">Chaco</option>
+          <option value="4">Chubut</option>
+          <option value="5">Córdoba</option>
+          <option value="6">Corrientes</option>
+          <option value="7">Entre Ríos</option>
+          <option value="8">Formosa</option>
+          <option value="9">Jujuy</option>
+          <option value="10">La Pampa</option>
+          <option value="11">La Rioja</option>
+          <option value="12">Mendoza</option>
+          <option value="13">Misiones</option>
+          <option value="14">Neuquén</option>
+          <option value="15">Río Negro</option>
+          <option value="16">San Juan</option>
+          <option value="17">San Luis</option>
+          <option value="18">Santa Cruz</option>
+          <option value="19">Santa Fe</option>
+          <option value="20">Santiago del Estero</option>
+          <option value="21">Tierra del Fuego</option>
+          <option value="22">Antártida e Islas del Atlántico Sur</option>
+          <option value="23">Salta</option>
+          <option value="24">Tucumán</option>
+        </select>
+
+            <textarea class="txtmensaje" id="fmensaje" placeholder="Mensaje:" required></textarea>
+
+            <label for="fAdjunto">Adjuntar archivo: </label>
+            <input id="fAdjunto" type="file" name="" value="">
+
+            <input type="submit" id="fenviar" value="Enviar mail">
+
+        </form>
+    </section>
+
+    <footer>
+        <!-- Pie de página (copyright, referencias, etc.) -->
+        <div class="logofooter">
+            <a href="index.html">
+                <img class="logofooter" src="../imagenes/logo.png">
+            </a>
+        </div>
+
+        <p>© 2020 - Tradelog S.A.</p>
+        <p>Todos los derechos reservados</p>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/TradelogSA">
+                <img class="redes" src="../imagenes/logo facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tradelogsau/">
+                <img class="redes" src="../imagenes/logo instagram.jpg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

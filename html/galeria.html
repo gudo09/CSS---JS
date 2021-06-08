@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="../imagenes/favicon-196x196.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/script.js"></script>
+
+    <title>Galería de fotos</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Cabecera de la página web -->
+        <div class="banner">
+            <a href="index.html">
+                <img class="banner" src="../imagenes/logo.png">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav_bar">
+            <script>
+                crearNavBar();
+            </script>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="galeria">
+
+            <div id="galeria_imagen">
+                <h2>Galería de imágenes</h2>
+                <img id="imgGaleria" src="../imagenes/galeria1.jpg" />
+            </div>
+            <div id="galeria_miniaturas">
+                <script>
+                    cargarMiniaturas();
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Pie de página (copyright, referencias, etc.) -->
+        <div class="logofooter">
+            <a href="index.html">
+                <img class="logofooter" src="../imagenes/logo.png">
+            </a>
+        </div>
+
+        <p>© 2020 - Tradelog S.A.</p>
+        <p>Todos los derechos reservados</p>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/TradelogSA">
+                <img class="redes" src="../imagenes/logo facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tradelogsau/">
+                <img class="redes" src="../imagenes/logo instagram.jpg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
